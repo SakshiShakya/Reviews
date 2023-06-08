@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(233, 252, 245);
+    font-family: 'Poppins', sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    text-align: center; 
+}
+.title{
+    text-align: center;
+}
+.main-title{
+    font-size: 3rem;
+}
+.underline{
+    border: 2px solid aquamarine;
+    width: 40%;
+    margin-top: 20px;
+}
+.reviews{
+    margin-top: 2%;
+    background-color: white;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img-container{
+    margin: 2% 0%;
+    background-color: white;
+}
+.profile-img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border-right: 14px solid aquamarine;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.icon-img{
+    position: relative;
+    height: 70px;
+    right: 80px;
+    top: 255px;
+    background: transparent;
+}
+.content-container{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+#job{
+    background-color: white;
+    color: rgb(90, 167, 141);
+}
+#info, #author{
+    background-color: white;
+}
+.button-container{
+    background-color: white;
+}
+.btn{
+    border: none;
+    color: rgb(90, 167, 141);
+    margin: 5px;
+}
+.btn i{
+    background-color: white;
+}
+.random-btn{
+    height: 50px;
+    width: 150px;
+    border: 2px solid rgb(90, 167, 141);
+    background: transparent;
+    font-size: larger;
+    border-radius: 10px;
+    margin: 20px;
+    color: rgb(90, 167, 141);
+    transition: all 1s;
+}
+.random-btn:hover{
+    color: white;
+    background-color:rgb(90, 167, 141);
+}
+.dot{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: aquamarine;
+    position: relative;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.dot1{
+    animation-name: example1;
+}
+.dot2{
+    animation-name: example2;
+}
+@keyframes example2{
+    0%{
+        right:0;
+        bottom: 0;
+    }
+    50%{
+        right: 100px;
+        bottom: 100px;
+    }
+    100%{
+        right: 0px;
+        bottom: 0px;
+    }
+}
+@keyframes example1{
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
